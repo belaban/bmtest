@@ -1,0 +1,15 @@
+
+
+
+
+RULE down(Message)
+CLASS ^Protocol
+#COMPILE
+HELPER com.bela.TestHelper
+METHOD down(Message)
+AT ENTRY
+BIND msg=$1;
+IF TRUE
+   DO System.out.println("** down(" + msg + ")");
+      downTime(msg, $this)
+ENDRULE
