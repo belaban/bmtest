@@ -4,7 +4,7 @@
 
 RULE down(Message)
 CLASS ^Protocol
-#COMPILE
+COMPILE
 HELPER com.bela.TestHelper
 METHOD down(Message)
 AT ENTRY
